@@ -3,7 +3,7 @@ import parsers from './parsers';
 
 async function usStats() {
   const response = await axios.get(
-    'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
+    'https://datausa.io/api/data?drilldowns=Nation&measures=Population&year=latest'
   );
 
   return parsers.usStats(response.data);
@@ -11,7 +11,7 @@ async function usStats() {
 
 async function stateStats(state) {
   const response = await axios.get(
-    'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
+    'https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest'
   );
 
   return parsers.stateStats(state, response.data);
