@@ -6,6 +6,14 @@ function number(num) {
   return num.toLocaleString();
 }
 
+function string(str) {
+  if (str === null || str === undefined) {
+    return "";
+  }
+  return str;
+}
+
 export default {
   number,
+  string
 };

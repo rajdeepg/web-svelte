@@ -14,12 +14,12 @@ function stateStats(state, data) {
 
 function parseStats(rawStats) {
   return {
-    idNation: rawStats["ID Nation"],
-    nation: rawStats.Nation,
-    idYear: rawStats["ID Year"],
+    idNation: format.string(rawStats["ID Nation"]),
+    nation: format.string(rawStats.Nation),
+    idYear: format.string(rawStats["ID Year"]),
     year: rawStats.Year,
     population: format.number(rawStats.Population),
-    slugNation: rawStats["Slug Nation"]
+    slugNation: format.string(rawStats["Slug Nation"])
   };
 }
 
