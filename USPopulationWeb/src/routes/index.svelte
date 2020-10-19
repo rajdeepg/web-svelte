@@ -17,7 +17,6 @@
 
 <script>
   import PopulationStat from "../components/PopulationStat.svelte";
-
   import TableContainer from "../components/TableContainer.svelte";
 
   export let usStats;
