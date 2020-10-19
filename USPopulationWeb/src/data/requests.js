@@ -11,7 +11,7 @@ async function usStats() {
 
 async function stateStats(state) {
   const response = await axios.get(
-    'https://covidtracking.com/api/v1/states/current.json'
+    'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
   );
 
   return parsers.stateStats(state, response.data);

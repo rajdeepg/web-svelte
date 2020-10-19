@@ -2,21 +2,21 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.8d698c74.js"
+    "main": "client.9960467a.js"
   },
   "css": {
     "main": "main.5860229.css",
     "chunks": {
       "index.svelte": [
-        "client.8d698c74.css",
-        "TableContainer.645970ed.css"
+        "client.9960467a.css",
+        "TableContainer.90fc4e91.css"
       ],
       "about.svelte": [
-        "client.8d698c74.css"
+        "client.9960467a.css"
       ],
       "[state].svelte": [
-        "client.8d698c74.css",
-        "TableContainer.645970ed.css"
+        "client.9960467a.css",
+        "TableContainer.90fc4e91.css"
       ]
     }
   }

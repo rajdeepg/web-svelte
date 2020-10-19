@@ -24,12 +24,12 @@
 </script>
 
 <svelte:head>
-  <title>US Population Tracker - US</title>
+  <title>Population - US</title>
 </svelte:head>
 
 <div class="section header">
   <div class="container">
-    <h1>US Population Tracker - US</h1>
+    <h1>Population - US</h1>
   </div>
 </div>
 

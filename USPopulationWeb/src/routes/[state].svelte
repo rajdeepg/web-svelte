@@ -5,7 +5,6 @@
   export async function preload(page) {
     const state = page.params["state"];
     if (stateNames.find(s => s.abbreviation === state) === undefined) {
-      console.log("should get error");
       this.error(404, "State Not Found");
       return;
     }
@@ -34,13 +33,14 @@
 </script>
 
 <svelte:head>
-  <title>Covid 19 - {state}</title>
+  <title>Population - {state}</title>
 </svelte:head>
 
 <div class="section header">
   <div class="container">
-    <h1>Covid 19 - {state}</h1>
+    <h1>Population - {state}</h1>
   </div>
 </div>
 
 <PopulationStat {...stats} />
+
